@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery Demo</title>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("#showId").click(function() {
+                   $("#ball").fadeTo(3000, 1.0, function() {
+                        // $("body").css("background-color", "white")
+                        $("body").css({
+                            "background-color": "white",
+                            "color": "blue"
+                        })
+                   })
+                })
+
+                $("#hideId").click(function() {
+                    $("#ball").fadeTo(3000, 0.2, function() {
+                        // $("body").css("background-color", "gold")
+                        $("body").css({
+                            "background-color": "gold",
+                            "color": "red"
+                        })
+                    })
+                    // $("#ball").fadeOut(3000, function() {
+                    //     // $("body").css("background-color", "gold")
+                    //     $("body").css({
+                    //         "background-color": "gold",
+                    //         "color": "red"
+                    //     })
+                    // })
+                })
+
+                $("#animateId").click(function() {
+                    $("#ball").animate({
+                        "left": "700px",
+                        "width": "200px"
+                    }, 2000).animate({
+                        "top": "500px",
+                        "width": "300px"
+                    }, 2000).animate({
+                        "top": 0,
+                        "left": 0,
+                        "width": "120px"
+                    }, 2000)
+                })
+
+                $(window).scroll(function() {
+                    console.info(Math.random())
+                })
+            });
+        </script>
+        <style>
+            #ball {
+                position: relative;
+            }
+            ul.menu {
+                list-style-type: none;
+                padding: 0;
+                margin: 0 ;
+                display: flex;
+            }
+            
+            ul.menu > li > a{
+                display: block;
+                text-decoration: none;
+                padding: 20px;
+                background-color: blue;
+                color: white;
+                min-width: 120px;
+                margin-right: 10px;
+                text-align:center;
+            }
+
+            .active {
+                background-color: red !important;
+            }
+
+            .tab-content h1 {
+                margin: 0;
+                padding: 20px 10px;
+            }
+        </style>
+
+        <script>
+            $(document).ready(function() {
+                $("ul.menu li:first-child a").addClass("active")
+                $(".tab-content h1:not(:first-child)").hide()
+
+                $("ul.menu").on('click', 'li > a', function() {
+                    event.preventDefault()
+
+                    // Doi mau tab
+                    $("ul.menu a").removeClass('active')
+                    $(this).addClass('active')
+
+                    // Doi noi dung
+                    $(".tab-content h1").hide()
+
+                    var id = $(this).attr("href")
+                    $(id).show()
+                })
+
+                var b = "blue";
+                $("ul.menu > li > a").on({
+                    mouseenter: function() {
+                        b = $(this).css("background-color")
+                        $(this).css({
+                            "font-size": "25px",
+                            "background-color": "gold"
+                        })
+                    },
+                    mouseleave: function() {
+                        $(this).css({
+                            "font-size": "16px",
+                            "background-color": b
+                        })
+                    }
+                })
+
+                $("#addTab").click(function() {
+                    var name = $("#tabName").val()
+                    var content = $("#tabContent").val()
+
+                    var id = $(".menu li").length + 1
+                    $(".menu").append(
+                        `<li><a href="#tab${id}">${name}</a></li>`
+                    )
+
+                    $(".tab-content").append(
+                        `<h1 id="tab${id}" style="display:none">${content}</h1>`
+                    )
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <section>
+            <div>
+                <input type="text" placeholder="Nhap ten tab..." id="tabName" />
+                <input type="text" placeholder="Nhap noi dung tab..." id="tabContent" />
+                <input type="button" value="Them tab" id="addTab" />
+                <br><br>
+            </div>
+            <ul class="menu">
+                <li><a href="#python">Python</a></li>
+                <li><a href="#java">Java</a></li>
+                <li><a href="#cs">C#</a></li>
+                <li><a href="#cpp">C++</a></li>
+
+            </ul>
+
+            <div class="tab-content active">
+                <h1 id="python">WELCOME TO PYTHON</h1>
+                <h1 id="java">WELCOME TO JAVA</h1>
+                <h1 id="cs">WELCOME TO C#</h1>
+                <h1 id="cpp">WELCOME TO C++</h1>
+            </div>
+        </section>
+
+        <div>
+            <input type="button" value="Show" id="showId" />
+            <input type="button" value="Hide" id="hideId" />
+            <input type="button" value="Animate" id="animateId" />
+        </div>
+        <div>
+            <img src="images/ball.png" width="120" id="ball" alt="ball" />
+        </div>
+        <h1>WELCOME TO jQuery!</h1>
+        <h1>WELCOME TO jQuery!</h1>
+
+        <h1>WELCOME TO jQuery!</h1>
+        <h1>WELCOME TO jQuery!</h1>
+        <h1>WELCOME TO jQuery!</h1>
+
+        <h1>WELCOME TO jQuery!</h1>
+        <h1>WELCOME TO jQuery!</h1>
+        <h1>WELCOME TO jQuery!</h1>
+
+        <h1>WELCOME TO jQuery!</h1>
+        <h1>WELCOME TO jQuery!</h1>
+        <h1>WELCOME TO jQuery!</h1>
+
+        <h1>WELCOME TO jQuery!</h1>
+        <h1>WELCOME TO jQuery!</h1>
+        <h1>WELCOME TO jQuery!</h1>
+
+        <h1>WELCOME TO jQuery!</h1>
+        <h1>WELCOME TO jQuery!</h1>
+        <h1>WELCOME TO jQuery!</h1>
+
+        <h1>WELCOME TO jQuery!</h1>
+    </body>
+</html>

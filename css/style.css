@@ -1,0 +1,167 @@
+div.items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+div.items > div {
+    width: 32%;
+    margin: 0.5%;
+    padding: 0.5%;
+    background-color: orange;
+    border-radius: 20px;
+    
+}
+
+div.items > div  > div {
+    overflow: hidden;
+}
+
+div.items > div img {
+    width: 100%;
+    transition: transform ease-in 1s;
+}
+
+div.items > div img:hover {
+    transform: scale(1.2);
+}
+
+ul.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: lightgray;
+    animation: doimaunen ease-in 2s infinite;
+}
+
+@keyframes doimaunen {
+    10% {
+        background-color: wheat;
+    }
+    30% {
+        background-color: violet;
+    }
+    50% {
+        background-color: turquoise;
+    }
+    75% {
+        background-color: rgb(27, 34, 14);
+    }
+}
+
+nav > ul {
+    
+    display: flex;
+    
+}
+
+ul.menu > li {
+    max-width: 200px;
+    border-right: 1px solid white;
+    
+    /* padding: 10px; */
+}
+
+ul.menu > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: blue;
+}
+
+nav > ul > li:last-child {
+    margin-left: auto;
+}
+
+ul.menu > li > a:hover {
+    background-color: darkblue;
+    color: whitesmoke;
+}
+
+.subcontent {
+    display: none;
+}
+.sub:hover .subcontent {
+    display: block;
+    position: absolute;
+}
+
+div.lang {
+   overflow: auto;
+}
+
+div.lang > div:first-child {
+    width: 20%;
+    float: left;
+}
+
+div.lang img {
+    width: 100%;
+}
+
+div.item {
+    position: relative;
+}
+
+div.label {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: green;
+    padding: 10px;
+    border-radius: 0 20px;
+}
+
+div.item > h1 {
+    font-size: 4vw;
+}
+
+@media screen and (max-width: 1200px) {
+   body {
+       background-color: lightblue;
+   } 
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        background-color: lightseagreen;
+    } 
+
+    div.items > div {
+        width: 49%;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    body {
+        background-color: lightyellow;
+    } 
+
+    div.items > div {
+        width: 99%;
+    }
+
+    nav > ul.menu {
+        flex-direction: column;
+    }
+
+    nav > ul.menu > li:last-child {
+        margin-left: 0;
+    }
+
+    nav > ul.menu > li {
+        border-right: none;
+    }
+}
+
+@media screen and (max-width:700px) and (orientation:landscape) {
+    body {
+        background-color: darkblue;
+        color: white;
+    }
+}
