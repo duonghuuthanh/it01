@@ -107,24 +107,28 @@ div.item {
 div.detail {
     position: absolute;
     top: 0;
-    /* left: 0;
-    right: 0; */
+    left: 100%;
+    right: 0;
     bottom: 0;
     color: white;
     font-size: 20px;
     padding: 0;
     padding-top: 30%;
     background-color: rgba(0, 0, 0, 0.5);
-    width: 0;
+    /* width: 0; */
     overflow: hidden;
-    transition: width .25s;
+    transition: left .5s;
+    /* opacity: 0; */
     /* display: none; */
 }
 
 div.item:hover div.detail {
-    /* display: block; */
     padding: 30px;
-    width: 100%;
+    left: 0;
+    /* opacity: 1; */
+    /* display: block; */
+    
+    /* width: 100%; */
 }
 
 div.item-content {
@@ -187,4 +191,41 @@ div.my-footer {
 
 div.my-footer > div {
     width: 33.33%;
+}
+
+h1.subject > span {
+    display: block;
+    background-color: darkorange;
+    color: white;
+    padding: 20px;
+    font-size: 40px;
+    margin: 0;
+    width: 30%;
+    border-radius: 20px 20px 0 0;
+}
+
+h1.subject::after {
+    content: " ";
+   
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: darkorange;
+}
+
+div.post {
+    display: flex;
+}
+
+div.post > div:first-child {
+    width: 10%;
+}
+
+div.post img {
+    width: 100%;
+}
+
+nav {
+    position: relative;
+    z-index: 9999;
 }
