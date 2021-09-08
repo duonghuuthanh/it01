@@ -59,8 +59,8 @@
                     <h1>TIN HOC VA DOI SONG</h1>
                 </div>
                 <div>
-                    <input type="text" placeholder="Nhap tu khoa..." />
-                    <input type="button" value="Tim kiem" />
+                    <input type="text" placeholder="Nhap tu khoa..." id="inputext" />
+                    <input type="button" value="Tim kiem" id="btn"/>
                 </div>
            </div>
           
@@ -240,4 +240,21 @@
            </div>
         </footer>
     </body>
+    <script>
+        function fndx(){
+            var inputtext=document.querySelector("#inputext");
+            var titile=document.querySelectorAll('.find li a');
+            var btn=document.querySelector('#btn');
+            var t=document.querySelectorAll('.item')
+            for(var i=0;i<titile.length;i++){
+                if(titile.indexOf($(inputtext.val())) != -1){
+                    $(t[i]).css("border","1px solid red")
+                }
+            }
+        }
+        $(btn).click(function(){
+            findx();
+        })
+
+    </script>
 </html>
