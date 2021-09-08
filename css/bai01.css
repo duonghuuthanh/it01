@@ -1,0 +1,190 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+nav > ul.menu {
+    display: flex;
+}
+
+ul.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #CC3300;
+    
+}
+
+nav > ul.menu > li {
+    width: 16.69%;
+    text-align: center;
+    position: relative;
+}
+
+ul.menu > li > a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    border-right: 1px solid white;
+    padding: 15px 0;
+}
+
+ul.menu > li > a:hover {
+    background-color: #e9815e;
+}
+
+ul.menu > li > a span {
+    display: block;
+}
+
+header {
+    background: linear-gradient( #e9815e, #CC3300);
+    margin-top: 5px;
+}
+
+div.header {
+    display:flex;
+    align-items: center;
+}
+
+div.header h1 {
+    color:white;
+    font-size: 50px;
+    text-shadow: 3px 4px 3px darkblue;
+}
+
+div.header > div:nth-child(1) {
+    width: 10%;
+}
+
+div.header > div:nth-child(2) {
+    width: 70%;
+}
+
+div.header > div:nth-child(3) {
+    width: 20%;
+}
+
+input {
+    padding: 10px;
+}
+
+input[type=text] {
+    width: 60%;
+}
+
+.subcontent {
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+
+.subcontent::after {
+    content: " ";
+    border-width: 15px;
+    border-color: transparent transparent #CC3300 transparent;
+    border-style: solid;
+    position: absolute;
+    top: -30px;
+    left: 45%; 
+}
+
+.sub:hover .subcontent {
+    display: block;
+}
+
+section.course {
+    width: 80%;
+    margin: 5px auto;
+}
+
+div.item {
+    width: 25%;
+    padding: 5px;
+    position: relative;
+}
+
+div.detail {
+    position: absolute;
+    top: 0;
+    /* left: 0;
+    right: 0; */
+    bottom: 0;
+    color: white;
+    font-size: 20px;
+    padding: 0;
+    padding-top: 30%;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 0;
+    overflow: hidden;
+    transition: width .25s;
+    /* display: none; */
+}
+
+div.item:hover div.detail {
+    /* display: block; */
+    padding: 30px;
+    width: 100%;
+}
+
+div.item-content {
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(tomato, orange);
+}
+
+div.item h1 {
+    color: white;
+    background: linear-gradient(blue, lightblue);
+    padding: 10px;
+    margin: 0;
+}
+
+div.item img {
+    width: 80%;
+}
+
+input[type=button] {
+    background-color: tomato;
+    color: white;
+    padding: 10px;
+    border: 1px solid orange;
+}
+
+div.items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul.social {
+    background-color: transparent !important;
+    position: fixed;
+}
+
+ul.social li a {
+    padding: 0 !important;
+    transition: transform 0.5s;
+}
+
+ul.social li a:hover {
+    background-color: transparent !important;
+    transform: scale(1.1);
+}
+
+footer {
+    background: linear-gradient(orange, white);
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+div.my-footer {
+    display: flex;
+    padding: 10px;
+}
+
+div.my-footer > div {
+    width: 33.33%;
+}
