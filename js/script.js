@@ -64,7 +64,7 @@ $(document).ready(function() {
     })
 
     $("nav ul.menu a").click(function(event) {
-        event.preventDefault()
+        // event.preventDefault()
 
         var id = $(this).attr("href")
        

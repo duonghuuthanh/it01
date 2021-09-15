@@ -1,0 +1,187 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(../fonts/VNI-Ong\ do.ttf);
+}
+
+@font-face {
+    font-family: myFont2;
+    src: url(../fonts/VNI-Slogan.ttf);
+}
+
+body {
+    background: linear-gradient(blue, white, blue);
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #77B3D4;
+}
+
+div.my-header {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.user {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+div.nav {
+    margin-left: auto;
+    margin-top: auto;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+ul.menu > li {
+    margin-right: 2px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul.menu > li > a {
+    display: block;
+    background: linear-gradient(lightblue, blue);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 15px 15px 0 0;
+    font-family: myFont2 !important;
+    font-size: 1.5em;
+}
+
+h1.subject {
+    color: darkred;
+    text-shadow: 3px 4px 3px red;
+    font-family: myFont !important;
+}
+
+div.controls {
+    text-align: center;
+    background-color: rgb(74, 74, 226);
+    padding: 10px;
+}
+input {
+    padding: 10px;
+}
+
+input[type=text], input[type=date] {
+    width: 30%;
+    color: darkblue !important;
+}
+
+input[type=button] {
+    color: white;
+    background-color: blue;
+    border: 1px solid darkblue;
+    width: 100px;
+}
+
+div.items {
+    background-color: darkblue;
+}
+
+div.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+div.item > div:first-child {
+    width: 5%;
+}
+
+div.item > div:nth-child(2) {
+    width: 50%;
+}
+
+.active {
+    background-color: darkred;
+}
+
+h1.title {
+    border-bottom: 5px solid blue;
+    margin: 0;
+    margin-top: 10px;
+}
+
+h1.title > span {
+    display: block;
+    background-color: blue;
+    padding: 10px;
+    font-size: 2em;
+    width: 25%;
+    position: relative;
+}
+
+h1.title > span::after {
+    content: " ";
+    border-width: 37px;
+    border-style: solid;
+    border-color: transparent transparent blue blue;
+    position: absolute;
+    left: 100%;
+    bottom: 0;
+}
+
+figure {
+    margin: 0;
+}
+
+figure > figcaption {
+    color: darkslateblue !important;
+}
+
+div.figures {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+div.figures > figure {
+    width: 25%;
+}
+
+div.figures > figure img {
+    width: 100%;
+}
+
+footer {
+    background-color: lightblue ;
+    padding: 20px;
+}
+
+section.ads > div {
+    background-color: darkblue;
+    width: 13%;
+    position: fixed;
+    text-align: center;
+    padding: 8em 0;
+}
+
+section.ads > div:first-child {
+    left: 1%;
+}
+
+section.ads > div:last-child {
+    right: 1%;
+}
