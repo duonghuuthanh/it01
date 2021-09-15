@@ -14,7 +14,7 @@
 }
 
 body {
-    background: linear-gradient(blue, white, blue);
+    background: linear-gradient(blue, white, rgb(127, 127, 179));
 }
 
 .container {
@@ -47,6 +47,10 @@ ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    
+}
+
+ul.menu {
     display: flex;
 }
 
@@ -96,7 +100,7 @@ input[type=button] {
 }
 
 div.items {
-    background-color: darkblue;
+    
 }
 
 div.item {
@@ -104,6 +108,7 @@ div.item {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    background-color: darkblue;
 }
 
 div.item > div:first-child {
@@ -115,7 +120,7 @@ div.item > div:nth-child(2) {
 }
 
 .active {
-    background-color: darkred;
+    background-color: darkred !important;
 }
 
 h1.title {
@@ -184,4 +189,42 @@ section.ads > div:first-child {
 
 section.ads > div:last-child {
     right: 1%;
+}
+
+div.content {
+    display: flex;
+    margin: 4em;
+}
+
+div.content > div {
+    width: 50%;
+    background-color: darkblue;
+    padding: 10%;
+    border: 2px dashed gold;
+}
+
+div.content > div:first-child {
+    transform: skewY(-5deg);
+}
+
+div.content > div:last-child {
+    transform: skewY(5deg);
+}
+
+footer {
+    overflow: hidden;
+}
+
+footer > span {
+    position: relative;
+    animation: dichuyen 20s infinite;
+}
+
+@keyframes dichuyen {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 100%;
+    }
 }
