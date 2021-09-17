@@ -24,6 +24,7 @@ div.items > div  > div {
 div.items > div img {
     width: 100%;
     transition: transform ease-in 1s;
+    
 }
 
 div.items > div img:hover {
