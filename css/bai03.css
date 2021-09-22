@@ -1,0 +1,119 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white !important;
+}
+
+header {
+    background-color: rgb(71, 71, 201);
+    padding: 10px;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul.menu > li > a {
+    display: block;
+    padding: 15px 20px;
+}
+
+.btn {
+    min-width: 120px !important;
+    text-align: center;
+}
+
+ul.menu-right > li:hover {
+    opacity: 0.8 !important;
+}
+
+.btn-green {
+    background-color: rgb(79, 153, 6) !important;
+    border: 1px solid green;
+    border-radius: 5px 0 0 5px;
+}
+
+.btn-red {
+    background-color: chocolate;
+    border: 1px solid rgb(124, 53, 2);
+    border-radius: 0 5px 5px 0;
+}
+
+h1.subject {
+    color: black !important;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+}
+
+h1.subject::after {
+    content: "--o0o--";
+    display: block;
+    font-size: 20px;
+}
+
+div.course {
+    background-image: url(../images/lab03/section_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    padding: 20px;
+}
+
+div.course > div.items {
+    background-color: rgba(15, 15, 146, 0.6);
+    border-radius: 15px;
+}
+
+div.course > div.items > figure {
+    text-align: center;
+    padding: 10px;
+    width: 25%;
+}
+
+figure > img {
+    width: 50%;
+}
+
+div.sub-news > div {
+    width: 50%;
+}
+
+.sub-news img {
+    width: 100%;
+}
+
+.stats {
+    text-align: center;
+}
+
+.stats * {
+    color: black !important;
+}
+
+.big-size {
+    font-size: 6rem;
+}
+
+footer {
+    background-color: darkblue;
+    padding: 2rem 5px;
+}
