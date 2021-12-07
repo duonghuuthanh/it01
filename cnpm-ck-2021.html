@@ -1,0 +1,1790 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <table class="table" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+        <td valign="top" align="center" width="100%">
+            <table id="Table2" cellspacing="1" cellpadding="1" width="100%" border="0">
+                <tbody><tr>
+                    <td class="title" style="width: 273px" valign="middle" align="right" width="273" height="23">Năm học:
+                    </td>
+                    <td style="width: 112px" align="left" width="112" height="23">
+                        <select name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$ddlNamHoc" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$ddlNamHoc\',\'\')', 0)" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_ddlNamHoc" class="StudentInfoDetails_normal_dl" style="width:88px;">
+	<option value="2000-2001">2000-2001</option>
+	<option value="2001-2002">2001-2002</option>
+	<option value="2002-2003">2002-2003</option>
+	<option value="2003-2004">2003-2004</option>
+	<option value="2004-2005">2004-2005</option>
+	<option value="2005-2006">2005-2006</option>
+	<option value="2006-2007">2006-2007</option>
+	<option value="2006-2008">2006-2008</option>
+	<option value="2006-2009">2006-2009</option>
+	<option value="2006-2010">2006-2010</option>
+	<option value="2006-2011">2006-2011</option>
+	<option value="2006-2012">2006-2012</option>
+	<option value="2006-2013">2006-2013</option>
+	<option value="2006-2014">2006-2014</option>
+	<option value="2006-2015">2006-2015</option>
+	<option value="2006-2016">2006-2016</option>
+	<option value="2007-2008">2007-2008</option>
+	<option value="2008-2009">2008-2009</option>
+	<option value="2009-2010">2009-2010</option>
+	<option value="2010-2011">2010-2011</option>
+	<option value="2011-2012">2011-2012</option>
+	<option value="2012-2013">2012-2013</option>
+	<option value="2013-2014">2013-2014</option>
+	<option value="2014-2015">2014-2015</option>
+	<option value="2015-2016">2015-2016</option>
+	<option value="2016-2017">2016-2017</option>
+	<option value="2017-2018">2017-2018</option>
+	<option value="2018-2019">2018-2019</option>
+	<option value="2019-2020">2019-2020</option>
+	<option value="2020-2021">2020-2021</option>
+	<option selected="selected" value="2021-2022">2021-2022</option>
+	<option value="2022-2023">2022-2023</option>
+	<option value="2023-2024">2023-2024</option>
+
+</select></td>
+                    <td class="title" valign="middle" align="right" width="100" height="23">Học kỳ:
+                    </td>
+                    <td align="left" width="44%" height="23">
+                        <select name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$ddlHocKy" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$ddlHocKy\',\'\')', 0)" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_ddlHocKy" class="StudentInfoDetails_normal_dl" style="width:88px;">
+	<option selected="selected" value="HK01">HK01</option>
+	<option value="HK02">HK02</option>
+	<option value="HK03">HK03</option>
+
+</select>
+                        &nbsp;&nbsp;
+                    <a id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_HyperLink2" href="https://docs.google.com/file/d/0B-pUp8vuvCF-dzk3MEFIekhuUDQ/edit?usp=sharing" target="_blank">Hướng dẫn xuất bảng điểm</a>
+                    </td>
+                </tr>
+            </tbody></table>
+        </td>
+    </tr>
+    <tr>
+        <td class="StudentInfoDetails_normal_dl" align="right" height="30px">Tình trạng:
+            <img border="0" src="images/false_.jpg" width="15" height="15">: Chưa nhập điểm
+            <img border="0" src="images/True.jpg" width="15" height="15">: Đã nhập điểm
+            <img border="0" src="images/UnLock.png" width="15" height="15">: Chưa khóa điểm
+            <img border="0" src="images/Lock.png" width="15" height="15">: Đã khóa điểm
+        </td>
+    </tr>
+    <tr>
+        <td>
+            
+            <div>
+	<table cellspacing="0" cellpadding="4" border="1" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvProfessorExamination" style="color:#333333;width:100%;border-collapse:collapse;margin-bottom: 0px">
+		<tbody><tr align="center" style="color:White;background-color:#1C5E55;font-size:9pt;font-weight:bold;">
+			<th scope="col">STT</th><th scope="col">Mã HP</th><th scope="col">Tên học phần</th><th scope="col">Lớp học phần</th><th scope="col">Lớp <br>Sinh viên</th><th scope="col">Ngày thi</th><th scope="col">Phòng thi</th><th scope="col">Nhập <br>điểm</th><th scope="col">Xem <br>điểm</th><th scope="col">Tình trạng</th>
+		</tr><tr>
+			<td colspan="10">Không có lớp học phần</td>
+		</tr>
+	</tbody></table>
+</div>
+            <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_lblNoteall" class="StudentInfoDetails_normal_dl">Các môn thi cuối kỳ theo nhóm</span><br>
+            <div>
+	<table cellspacing="0" cellpadding="4" border="1" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvProfessorSchedulestudyUnits" style="color:#333333;width:100%;border-collapse:collapse;">
+		<tbody><tr align="center" style="color:White;background-color:#1C5E55;font-size:9pt;font-weight:bold;">
+			<th scope="col">STT</th><th scope="col">Mã HP</th><th scope="col">Tên học phần</th><th scope="col">Lớp học phần</th><th scope="col">Lớp sinh viên</th><th scope="col">Nhập điểm</th><th scope="col">Xem điểm</th><th scope="col">DSSV</th><th scope="col">Tình trạng</th>
+		</tr><tr class="style31" align="left" style="background-color:#E3EAEB;font-size:9pt;">
+			<td>
+                            1
+                        </td><td>
+                            <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvProfessorSchedulestudyUnits_ctl02_lblCurriculumID" style="display:inline-block;width:60px;">SOEN330679</span>
+                        </td><td>
+                            <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvProfessorSchedulestudyUnits_ctl02_lblCurriculumName" style="display:inline-block;width:200px;">Công nghệ phần mềm</span>
+                        </td><td>
+                            <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvProfessorSchedulestudyUnits_ctl02_lblScheduleStudyUnitID" style="display:inline-block;width:90px;">SOEN330679_03</span>
+                        </td><td>
+                            <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvProfessorSchedulestudyUnits_ctl02_lblCredits" style="display:inline-block;width:80px;">191103A,<br>191103B</span>
+                        </td><td align="center">
+                            <a id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvProfessorSchedulestudyUnits_ctl02_lbtMark" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvProfessorSchedulestudyUnits$ctl02$lbtMark','')" style="display:inline-block;width:60px;">Nhập điểm</a>
+                        </td><td align="center">
+                            <a id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvProfessorSchedulestudyUnits_ctl02_lbtXemDiem" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvProfessorSchedulestudyUnits$ctl02$lbtXemDiem','')" style="display:inline-block;width:60px;">Xem</a>
+                        </td><td align="center">
+                            <a id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvProfessorSchedulestudyUnits_ctl02_lnkPrint" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvProfessorSchedulestudyUnits$ctl02$lnkPrint','')">In</a>
+                        </td><td align="center">
+                            <img id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvProfessorSchedulestudyUnits_ctl02_imgStatus" src="Images/True.jpg" style="height:15px;border-width:0px;">
+                            <img id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvProfessorSchedulestudyUnits_ctl02_imgLock" src="Images/UnLock.png" style="height:15px;border-width:0px;">
+                        </td>
+		</tr>
+	</tbody></table>
+</div>
+        </td>
+    </tr>
+    
+            <tr height="30">
+                <td class="title">Nhập điểm thi theo lớp học phần
+                </td>
+            </tr>
+            <tr>
+                    <td>
+                        <table border="0" cellpadding="0" cellspacing="5" width="100%">
+                            <tbody><tr>
+                                <td align="center" colspan="2">
+                                    <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_Label3" class="title">DANH SÁCH SINH VIÊN TRONG LỚP HỌC PHẦN</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Năm học:
+                                    <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_lblYearStudyMS" style="font-weight:bold;">2021-2022</span>
+                                </td>
+                                <td>Học kỳ:
+                                    <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_lblTemrIDMS" style="font-weight:bold;">HK01</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Học phần:
+                                    <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_lblCurriculumNameMS" style="font-weight:bold;">Công nghệ phần mềm</span>
+                                </td>
+                                <td>Mã học phần:<span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_lblScheduleStudyUnitMS" style="font-weight:bold;">SOEN330679_03</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_lblThoiGianNhapDiemSCH">Thời gian nhập điểm từ ngày <b>23-08-2021</b> đến ngày <b>13-12-2021</b></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_lnkXuatFileNhapDiemTheoLHP" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$lnkXuatFileNhapDiemTheoLHP','')">[Xuất file nhập điểm]</a>
+                                    <a id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_lnkImportDiemThiTheoLHP" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$lnkImportDiemThiTheoLHP','')">[Import điểm]</a>
+                                </td>
+                                <td style="text-align: right">
+                                    <input type="submit" name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$btnLockedMS" value="Khóa điểm" onclick="return YCDiemThiLHP();" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_btnLockedMS" style="height: 26px">
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <div>
+		<table cellspacing="0" cellpadding="4" border="1" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS" style="color:#333333;width:100%;border-collapse:collapse;">
+			<tbody><tr align="center" style="color:White;background-color:#1C5E55;font-size:9pt;font-weight:bold;">
+				<th scope="col">STT</th><th scope="col">Mã Số</th><th scope="col">Lớp</th><th scope="col">Họ Lót</th><th scope="col">Tên</th><th scope="col">Ngày Sinh</th><th scope="col">Điểm thi</th><th scope="col">Ghi chú</th>
+			</tr><tr class="style31" align="left" style="background-color:#E3EAEB;font-size:9pt;">
+				<td>
+                                        1
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl02_lblStudentID" style="display:inline-block;width:80px;">18110248</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl02_lblClassStudentID" style="display:inline-block;width:80px;">18110NW</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl02_lblLastMiddleName" style="display:inline-block;width:200px;">Nguyễn Việt </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl02_lblFirstName" style="display:inline-block;width:80px;">Anh</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl02_lblBirthday" style="display:inline-block;width:80px;">01/06/2000</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl02$txtMark10" type="text" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl02_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl02_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl03_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl02_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:White;font-size:9pt;">
+				<td>
+                                        2
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl03_lblStudentID" style="display:inline-block;width:80px;">19110324</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl03_lblClassStudentID" style="display:inline-block;width:80px;">191103A</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl03_lblLastMiddleName" style="display:inline-block;width:200px;">Trần Lưu Thế </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl03_lblFirstName" style="display:inline-block;width:80px;">Anh</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl03_lblBirthday" style="display:inline-block;width:80px;">17/06/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl03$txtMark10" type="text" value="7.5" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl03_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl03_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl04_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl03_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:#E3EAEB;font-size:9pt;">
+				<td>
+                                        3
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl04_lblStudentID" style="display:inline-block;width:80px;">19110329</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl04_lblClassStudentID" style="display:inline-block;width:80px;">191102C</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl04_lblLastMiddleName" style="display:inline-block;width:200px;">Thái Duy </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl04_lblFirstName" style="display:inline-block;width:80px;">Bảo</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl04_lblBirthday" style="display:inline-block;width:80px;">02/12/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl04$txtMark10" type="text" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl04_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl04_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl05_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl04_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:White;font-size:9pt;">
+				<td>
+                                        4
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl05_lblStudentID" style="display:inline-block;width:80px;">19110331</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl05_lblClassStudentID" style="display:inline-block;width:80px;">191103A</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl05_lblLastMiddleName" style="display:inline-block;width:200px;">Đỗ Cao Minh </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl05_lblFirstName" style="display:inline-block;width:80px;">Chí</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl05_lblBirthday" style="display:inline-block;width:80px;">26/02/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl05$txtMark10" type="text" value="8.5" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl05_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl05_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl06_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl05_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:#E3EAEB;font-size:9pt;">
+				<td>
+                                        5
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl06_lblStudentID" style="display:inline-block;width:80px;">19110338</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl06_lblClassStudentID" style="display:inline-block;width:80px;">191101A</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl06_lblLastMiddleName" style="display:inline-block;width:200px;">Phạm Phong </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl06_lblFirstName" style="display:inline-block;width:80px;">Duy</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl06_lblBirthday" style="display:inline-block;width:80px;">10/11/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl06$txtMark10" type="text" value="10" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl06_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl06_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl07_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl06_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:White;font-size:9pt;">
+				<td>
+                                        6
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl07_lblStudentID" style="display:inline-block;width:80px;">19110340</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl07_lblClassStudentID" style="display:inline-block;width:80px;">191103B</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl07_lblLastMiddleName" style="display:inline-block;width:200px;">Võ Trường </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl07_lblFirstName" style="display:inline-block;width:80px;">Duy</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl07_lblBirthday" style="display:inline-block;width:80px;">18/09/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl07$txtMark10" type="text" value="7.5" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl07_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl07_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl08_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl07_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:#E3EAEB;font-size:9pt;">
+				<td>
+                                        7
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl08_lblStudentID" style="display:inline-block;width:80px;">19110341</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl08_lblClassStudentID" style="display:inline-block;width:80px;">191103B</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl08_lblLastMiddleName" style="display:inline-block;width:200px;">Lê Hải </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl08_lblFirstName" style="display:inline-block;width:80px;">Dương</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl08_lblBirthday" style="display:inline-block;width:80px;">01/01/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl08$txtMark10" type="text" value="10" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl08_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl08_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl09_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl08_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:White;font-size:9pt;">
+				<td>
+                                        8
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl09_lblStudentID" style="display:inline-block;width:80px;">19110348</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl09_lblClassStudentID" style="display:inline-block;width:80px;">191102C</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl09_lblLastMiddleName" style="display:inline-block;width:200px;">Bùi Anh </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl09_lblFirstName" style="display:inline-block;width:80px;">Đức</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl09_lblBirthday" style="display:inline-block;width:80px;">27/11/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl09$txtMark10" type="text" value="7" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl09_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl09_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl10_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl09_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:#E3EAEB;font-size:9pt;">
+				<td>
+                                        9
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl10_lblStudentID" style="display:inline-block;width:80px;">16110313</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl10_lblClassStudentID" style="display:inline-block;width:80px;">16910NW</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl10_lblLastMiddleName" style="display:inline-block;width:200px;">Đỗ Văn </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl10_lblFirstName" style="display:inline-block;width:80px;">Đức</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl10_lblBirthday" style="display:inline-block;width:80px;">02/02/1998</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl10$txtMark10" type="text" value="6" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl10_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl10_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl11_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl10_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:White;font-size:9pt;">
+				<td>
+                                        10
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl11_lblStudentID" style="display:inline-block;width:80px;">19110352</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl11_lblClassStudentID" style="display:inline-block;width:80px;">191103A</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl11_lblLastMiddleName" style="display:inline-block;width:200px;">Võ Tá </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl11_lblFirstName" style="display:inline-block;width:80px;">Đức</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl11_lblBirthday" style="display:inline-block;width:80px;">06/06/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl11$txtMark10" type="text" value="7" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl11_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl11_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl12_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl11_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:#E3EAEB;font-size:9pt;">
+				<td>
+                                        11
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl12_lblStudentID" style="display:inline-block;width:80px;">19110353</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl12_lblClassStudentID" style="display:inline-block;width:80px;">191103B</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl12_lblLastMiddleName" style="display:inline-block;width:200px;">Lê Nguyễn Trường </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl12_lblFirstName" style="display:inline-block;width:80px;">Giang</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl12_lblBirthday" style="display:inline-block;width:80px;">25/10/2000</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl12$txtMark10" type="text" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl12_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl12_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl13_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl12_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:White;font-size:9pt;">
+				<td>
+                                        12
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl13_lblStudentID" style="display:inline-block;width:80px;">19110355</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl13_lblClassStudentID" style="display:inline-block;width:80px;">191103B</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl13_lblLastMiddleName" style="display:inline-block;width:200px;">Nguyễn Huỳnh Thanh </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl13_lblFirstName" style="display:inline-block;width:80px;">Hải</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl13_lblBirthday" style="display:inline-block;width:80px;">09/04/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl13$txtMark10" type="text" value="7" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl13_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl13_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl14_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl13_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:#E3EAEB;font-size:9pt;">
+				<td>
+                                        13
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl14_lblStudentID" style="display:inline-block;width:80px;">19110356</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl14_lblClassStudentID" style="display:inline-block;width:80px;">191103A</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl14_lblLastMiddleName" style="display:inline-block;width:200px;">Nguyễn Thái </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl14_lblFirstName" style="display:inline-block;width:80px;">Hải</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl14_lblBirthday" style="display:inline-block;width:80px;">10/04/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl14$txtMark10" type="text" value="8" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl14_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl14_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl15_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl14_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:White;font-size:9pt;">
+				<td>
+                                        14
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl15_lblStudentID" style="display:inline-block;width:80px;">19110359</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl15_lblClassStudentID" style="display:inline-block;width:80px;">191101B</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl15_lblLastMiddleName" style="display:inline-block;width:200px;">Lê Vũ </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl15_lblFirstName" style="display:inline-block;width:80px;">Hảo</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl15_lblBirthday" style="display:inline-block;width:80px;">10/11/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl15$txtMark10" type="text" value="6.5" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl15_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl15_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl16_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl15_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:#E3EAEB;font-size:9pt;">
+				<td>
+                                        15
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl16_lblStudentID" style="display:inline-block;width:80px;">17110295</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl16_lblClassStudentID" style="display:inline-block;width:80px;">17110NW</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl16_lblLastMiddleName" style="display:inline-block;width:200px;">Nguyễn Trung </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl16_lblFirstName" style="display:inline-block;width:80px;">Hảo</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl16_lblBirthday" style="display:inline-block;width:80px;">02/12/1998</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl16$txtMark10" type="text" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl16_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl16_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl17_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl16_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:White;font-size:9pt;">
+				<td>
+                                        16
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl17_lblStudentID" style="display:inline-block;width:80px;">19110360</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl17_lblClassStudentID" style="display:inline-block;width:80px;">191101A</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl17_lblLastMiddleName" style="display:inline-block;width:200px;">Lê Trần Thanh </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl17_lblFirstName" style="display:inline-block;width:80px;">Hân</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl17_lblBirthday" style="display:inline-block;width:80px;">03/01/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl17$txtMark10" type="text" value="10" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl17_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl17_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl18_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl17_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:#E3EAEB;font-size:9pt;">
+				<td>
+                                        17
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl18_lblStudentID" style="display:inline-block;width:80px;">19110361</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl18_lblClassStudentID" style="display:inline-block;width:80px;">191101B</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl18_lblLastMiddleName" style="display:inline-block;width:200px;">Võ Văn </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl18_lblFirstName" style="display:inline-block;width:80px;">Hậu</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl18_lblBirthday" style="display:inline-block;width:80px;">22/03/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl18$txtMark10" type="text" value="8" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl18_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl18_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl19_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl18_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:White;font-size:9pt;">
+				<td>
+                                        18
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl19_lblStudentID" style="display:inline-block;width:80px;">19110362</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl19_lblClassStudentID" style="display:inline-block;width:80px;">191103B</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl19_lblLastMiddleName" style="display:inline-block;width:200px;">Dương Thế </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl19_lblFirstName" style="display:inline-block;width:80px;">Hiếu</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl19_lblBirthday" style="display:inline-block;width:80px;">03/10/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl19$txtMark10" type="text" value="8.5" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl19_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl19_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl20_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl19_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:#E3EAEB;font-size:9pt;">
+				<td>
+                                        19
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl20_lblStudentID" style="display:inline-block;width:80px;">19110363</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl20_lblClassStudentID" style="display:inline-block;width:80px;">191101C</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl20_lblLastMiddleName" style="display:inline-block;width:200px;">Đàm Lưu Trung </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl20_lblFirstName" style="display:inline-block;width:80px;">Hiếu</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl20_lblBirthday" style="display:inline-block;width:80px;">20/05/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl20$txtMark10" type="text" value="8" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl20_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl20_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl21_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl20_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:White;font-size:9pt;">
+				<td>
+                                        20
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl21_lblStudentID" style="display:inline-block;width:80px;">19110364</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl21_lblClassStudentID" style="display:inline-block;width:80px;">191103A</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl21_lblLastMiddleName" style="display:inline-block;width:200px;">Nguyễn Hữu </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl21_lblFirstName" style="display:inline-block;width:80px;">Hiếu</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl21_lblBirthday" style="display:inline-block;width:80px;">24/02/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl21$txtMark10" type="text" value="7.5" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl21_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl21_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl22_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl21_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:#E3EAEB;font-size:9pt;">
+				<td>
+                                        21
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl22_lblStudentID" style="display:inline-block;width:80px;">19110371</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl22_lblClassStudentID" style="display:inline-block;width:80px;">191101A</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl22_lblLastMiddleName" style="display:inline-block;width:200px;">Trần Thị Mỹ </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl22_lblFirstName" style="display:inline-block;width:80px;">Huyền</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl22_lblBirthday" style="display:inline-block;width:80px;">26/04/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl22$txtMark10" type="text" value="10" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl22_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl22_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl23_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl22_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:White;font-size:9pt;">
+				<td>
+                                        22
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl23_lblStudentID" style="display:inline-block;width:80px;">19110373</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl23_lblClassStudentID" style="display:inline-block;width:80px;">191101A</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl23_lblLastMiddleName" style="display:inline-block;width:200px;">Phạm Quang </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl23_lblFirstName" style="display:inline-block;width:80px;">Hưng</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl23_lblBirthday" style="display:inline-block;width:80px;">23/04/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl23$txtMark10" type="text" value="6.5" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl23_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl23_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl24_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl23_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:#E3EAEB;font-size:9pt;">
+				<td>
+                                        23
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl24_lblStudentID" style="display:inline-block;width:80px;">19110375</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl24_lblClassStudentID" style="display:inline-block;width:80px;">191102B</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl24_lblLastMiddleName" style="display:inline-block;width:200px;">Trần Kiện </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl24_lblFirstName" style="display:inline-block;width:80px;">Khang</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl24_lblBirthday" style="display:inline-block;width:80px;">22/10/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl24$txtMark10" type="text" value="8" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl24_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl24_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl25_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl24_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:White;font-size:9pt;">
+				<td>
+                                        24
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl25_lblStudentID" style="display:inline-block;width:80px;">16110117</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl25_lblClassStudentID" style="display:inline-block;width:80px;">16110CLST1</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl25_lblLastMiddleName" style="display:inline-block;width:200px;">Vy Phú </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl25_lblFirstName" style="display:inline-block;width:80px;">Khải</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl25_lblBirthday" style="display:inline-block;width:80px;">30/01/1998</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl25$txtMark10" type="text" value="7" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl25_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl25_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl26_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl25_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:#E3EAEB;font-size:9pt;">
+				<td>
+                                        25
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl26_lblStudentID" style="display:inline-block;width:80px;">19110377</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl26_lblClassStudentID" style="display:inline-block;width:80px;">191103A</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl26_lblLastMiddleName" style="display:inline-block;width:200px;">Trịnh Ngọc </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl26_lblFirstName" style="display:inline-block;width:80px;">Khánh</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl26_lblBirthday" style="display:inline-block;width:80px;">31/08/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl26$txtMark10" type="text" value="6" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl26_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl26_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl27_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl26_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:White;font-size:9pt;">
+				<td>
+                                        26
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl27_lblStudentID" style="display:inline-block;width:80px;">19110379</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl27_lblClassStudentID" style="display:inline-block;width:80px;">191101A</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl27_lblLastMiddleName" style="display:inline-block;width:200px;">Đặng Đăng </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl27_lblFirstName" style="display:inline-block;width:80px;">Khoa</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl27_lblBirthday" style="display:inline-block;width:80px;">09/08/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl27$txtMark10" type="text" value="8" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl27_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl27_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl28_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl27_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:#E3EAEB;font-size:9pt;">
+				<td>
+                                        27
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl28_lblStudentID" style="display:inline-block;width:80px;">19110380</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl28_lblClassStudentID" style="display:inline-block;width:80px;">191103B</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl28_lblLastMiddleName" style="display:inline-block;width:200px;">Nguyễn Xuân </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl28_lblFirstName" style="display:inline-block;width:80px;">Khoa</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl28_lblBirthday" style="display:inline-block;width:80px;">08/08/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl28$txtMark10" type="text" value="8" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl28_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl28_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl29_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl28_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:White;font-size:9pt;">
+				<td>
+                                        28
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl29_lblStudentID" style="display:inline-block;width:80px;">19110382</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl29_lblClassStudentID" style="display:inline-block;width:80px;">191103B</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl29_lblLastMiddleName" style="display:inline-block;width:200px;">Trần Ngô Nhật </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl29_lblFirstName" style="display:inline-block;width:80px;">Khương</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl29_lblBirthday" style="display:inline-block;width:80px;">07/08/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl29$txtMark10" type="text" value="7" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl29_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl29_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl30_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl29_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:#E3EAEB;font-size:9pt;">
+				<td>
+                                        29
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl30_lblStudentID" style="display:inline-block;width:80px;">19110386</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl30_lblClassStudentID" style="display:inline-block;width:80px;">191101C</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl30_lblLastMiddleName" style="display:inline-block;width:200px;">Nguyễn Tấn </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl30_lblFirstName" style="display:inline-block;width:80px;">Kiệt</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl30_lblBirthday" style="display:inline-block;width:80px;">04/01/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl30$txtMark10" type="text" value="8" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl30_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl30_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl31_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl30_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:White;font-size:9pt;">
+				<td>
+                                        30
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl31_lblStudentID" style="display:inline-block;width:80px;">19110391</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl31_lblClassStudentID" style="display:inline-block;width:80px;">191101C</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl31_lblLastMiddleName" style="display:inline-block;width:200px;">Lương Bích </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl31_lblFirstName" style="display:inline-block;width:80px;">Long</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl31_lblBirthday" style="display:inline-block;width:80px;">29/09/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl31$txtMark10" type="text" value="6" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl31_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl31_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl32_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl31_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:#E3EAEB;font-size:9pt;">
+				<td>
+                                        31
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl32_lblStudentID" style="display:inline-block;width:80px;">19110055</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl32_lblClassStudentID" style="display:inline-block;width:80px;">191102B</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl32_lblLastMiddleName" style="display:inline-block;width:200px;">Diệp Tấn </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl32_lblFirstName" style="display:inline-block;width:80px;">Luân</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl32_lblBirthday" style="display:inline-block;width:80px;">15/05/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl32$txtMark10" type="text" value="7.5" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl32_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl32_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl33_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl32_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:White;font-size:9pt;">
+				<td>
+                                        32
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl33_lblStudentID" style="display:inline-block;width:80px;">19110039</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl33_lblClassStudentID" style="display:inline-block;width:80px;">191103B</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl33_lblLastMiddleName" style="display:inline-block;width:200px;">Hồ Huy </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl33_lblFirstName" style="display:inline-block;width:80px;">Luật</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl33_lblBirthday" style="display:inline-block;width:80px;">02/01/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl33$txtMark10" type="text" value="7.5" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl33_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl33_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl34_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl33_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:#E3EAEB;font-size:9pt;">
+				<td>
+                                        33
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl34_lblStudentID" style="display:inline-block;width:80px;">19110396</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl34_lblClassStudentID" style="display:inline-block;width:80px;">191101C</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl34_lblLastMiddleName" style="display:inline-block;width:200px;">Nguyễn Đức </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl34_lblFirstName" style="display:inline-block;width:80px;">Mạnh</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl34_lblBirthday" style="display:inline-block;width:80px;">13/11/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl34$txtMark10" type="text" value="6" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl34_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl34_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl35_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl34_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:White;font-size:9pt;">
+				<td>
+                                        34
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl35_lblStudentID" style="display:inline-block;width:80px;">19110398</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl35_lblClassStudentID" style="display:inline-block;width:80px;">191103A</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl35_lblLastMiddleName" style="display:inline-block;width:200px;">Nguyễn Văn </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl35_lblFirstName" style="display:inline-block;width:80px;">Minh</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl35_lblBirthday" style="display:inline-block;width:80px;">10/01/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl35$txtMark10" type="text" value="6" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl35_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl35_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl36_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl35_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:#E3EAEB;font-size:9pt;">
+				<td>
+                                        35
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl36_lblStudentID" style="display:inline-block;width:80px;">19110405</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl36_lblClassStudentID" style="display:inline-block;width:80px;">191101C</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl36_lblLastMiddleName" style="display:inline-block;width:200px;">Nguyễn Phúc </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl36_lblFirstName" style="display:inline-block;width:80px;">Nghiêm</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl36_lblBirthday" style="display:inline-block;width:80px;">10/05/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl36$txtMark10" type="text" value="6" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl36_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl36_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl37_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl36_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:White;font-size:9pt;">
+				<td>
+                                        36
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl37_lblStudentID" style="display:inline-block;width:80px;">19110408</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl37_lblClassStudentID" style="display:inline-block;width:80px;">191101A</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl37_lblLastMiddleName" style="display:inline-block;width:200px;">Nguyễn Kim </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl37_lblFirstName" style="display:inline-block;width:80px;">Nguyên</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl37_lblBirthday" style="display:inline-block;width:80px;">06/05/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl37$txtMark10" type="text" value="7" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl37_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl37_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl38_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl37_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:#E3EAEB;font-size:9pt;">
+				<td>
+                                        37
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl38_lblStudentID" style="display:inline-block;width:80px;">19110410</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl38_lblClassStudentID" style="display:inline-block;width:80px;">191101C</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl38_lblLastMiddleName" style="display:inline-block;width:200px;">Nguyễn Trần Lê </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl38_lblFirstName" style="display:inline-block;width:80px;">Nguyên</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl38_lblBirthday" style="display:inline-block;width:80px;">01/12/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl38$txtMark10" type="text" value="8" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl38_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl38_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl40_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl38_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:White;font-size:9pt;">
+				<td>
+                                        38
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl39_lblStudentID" style="display:inline-block;width:80px;">19110411</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl39_lblClassStudentID" style="display:inline-block;width:80px;">191103B</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl39_lblLastMiddleName" style="display:inline-block;width:200px;">Phí Đình </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl39_lblFirstName" style="display:inline-block;width:80px;">Nguyên</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl39_lblBirthday" style="display:inline-block;width:80px;">16/01/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl39$txtMark10" type="text" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl39_txtMark10" disabled="disabled" class="requiredField1" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl39_lblNote" style="display:inline-block;width:50px;">RT</span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:#E3EAEB;font-size:9pt;">
+				<td>
+                                        39
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl40_lblStudentID" style="display:inline-block;width:80px;">19110413</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl40_lblClassStudentID" style="display:inline-block;width:80px;">191102A</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl40_lblLastMiddleName" style="display:inline-block;width:200px;">Lê Thị Minh </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl40_lblFirstName" style="display:inline-block;width:80px;">Nguyệt</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl40_lblBirthday" style="display:inline-block;width:80px;">13/01/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl40$txtMark10" type="text" value="8" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl40_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl40_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl41_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl40_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:White;font-size:9pt;">
+				<td>
+                                        40
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl41_lblStudentID" style="display:inline-block;width:80px;">19110421</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl41_lblClassStudentID" style="display:inline-block;width:80px;">191102C</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl41_lblLastMiddleName" style="display:inline-block;width:200px;">Nguyễn Văn </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl41_lblFirstName" style="display:inline-block;width:80px;">Oai</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl41_lblBirthday" style="display:inline-block;width:80px;">17/05/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl41$txtMark10" type="text" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl41_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl41_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl42_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl41_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:#E3EAEB;font-size:9pt;">
+				<td>
+                                        41
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl42_lblStudentID" style="display:inline-block;width:80px;">19110050</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl42_lblClassStudentID" style="display:inline-block;width:80px;">191103A</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl42_lblLastMiddleName" style="display:inline-block;width:200px;">Tô Thanh </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl42_lblFirstName" style="display:inline-block;width:80px;">Phong</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl42_lblBirthday" style="display:inline-block;width:80px;">28/11/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl42$txtMark10" type="text" value="7" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl42_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl42_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl43_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl42_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:White;font-size:9pt;">
+				<td>
+                                        42
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl43_lblStudentID" style="display:inline-block;width:80px;">19110430</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl43_lblClassStudentID" style="display:inline-block;width:80px;">191102B</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl43_lblLastMiddleName" style="display:inline-block;width:200px;">Nguyễn Văn </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl43_lblFirstName" style="display:inline-block;width:80px;">Phú</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl43_lblBirthday" style="display:inline-block;width:80px;">07/02/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl43$txtMark10" type="text" value="8" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl43_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl43_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl44_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl43_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:#E3EAEB;font-size:9pt;">
+				<td>
+                                        43
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl44_lblStudentID" style="display:inline-block;width:80px;">19110432</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl44_lblClassStudentID" style="display:inline-block;width:80px;">191103B</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl44_lblLastMiddleName" style="display:inline-block;width:200px;">Đặng Hữu </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl44_lblFirstName" style="display:inline-block;width:80px;">Phúc</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl44_lblBirthday" style="display:inline-block;width:80px;">01/01/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl44$txtMark10" type="text" value="8" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl44_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl44_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl45_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl44_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:White;font-size:9pt;">
+				<td>
+                                        44
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl45_lblStudentID" style="display:inline-block;width:80px;">19110434</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl45_lblClassStudentID" style="display:inline-block;width:80px;">191103B</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl45_lblLastMiddleName" style="display:inline-block;width:200px;">Phan Vĩnh </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl45_lblFirstName" style="display:inline-block;width:80px;">Phúc</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl45_lblBirthday" style="display:inline-block;width:80px;">23/07/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl45$txtMark10" type="text" value="8.5" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl45_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl45_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl46_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl45_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:#E3EAEB;font-size:9pt;">
+				<td>
+                                        45
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl46_lblStudentID" style="display:inline-block;width:80px;">19110443</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl46_lblClassStudentID" style="display:inline-block;width:80px;">191103A</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl46_lblLastMiddleName" style="display:inline-block;width:200px;">Trần </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl46_lblFirstName" style="display:inline-block;width:80px;">Quang</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl46_lblBirthday" style="display:inline-block;width:80px;">08/10/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl46$txtMark10" type="text" value="8" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl46_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl46_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl47_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl46_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:White;font-size:9pt;">
+				<td>
+                                        46
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl47_lblStudentID" style="display:inline-block;width:80px;">19110040</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl47_lblClassStudentID" style="display:inline-block;width:80px;">191103B</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl47_lblLastMiddleName" style="display:inline-block;width:200px;">Trần Kế </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl47_lblFirstName" style="display:inline-block;width:80px;">Quang</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl47_lblBirthday" style="display:inline-block;width:80px;">21/03/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl47$txtMark10" type="text" value="7" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl47_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl47_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl48_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl47_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:#E3EAEB;font-size:9pt;">
+				<td>
+                                        47
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl48_lblStudentID" style="display:inline-block;width:80px;">19110444</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl48_lblClassStudentID" style="display:inline-block;width:80px;">191101C</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl48_lblLastMiddleName" style="display:inline-block;width:200px;">Nguyễn Hồng </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl48_lblFirstName" style="display:inline-block;width:80px;">Quân</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl48_lblBirthday" style="display:inline-block;width:80px;">05/02/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl48$txtMark10" type="text" value="6" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl48_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl48_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl49_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl48_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:White;font-size:9pt;">
+				<td>
+                                        48
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl49_lblStudentID" style="display:inline-block;width:80px;">19110447</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl49_lblClassStudentID" style="display:inline-block;width:80px;">191101C</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl49_lblLastMiddleName" style="display:inline-block;width:200px;">Nguyễn Quang </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl49_lblFirstName" style="display:inline-block;width:80px;">Sang</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl49_lblBirthday" style="display:inline-block;width:80px;">21/08/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl49$txtMark10" type="text" value="7" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl49_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl49_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl50_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl49_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:#E3EAEB;font-size:9pt;">
+				<td>
+                                        49
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl50_lblStudentID" style="display:inline-block;width:80px;">19110448</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl50_lblClassStudentID" style="display:inline-block;width:80px;">191103B</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl50_lblLastMiddleName" style="display:inline-block;width:200px;">Nguyễn Đức </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl50_lblFirstName" style="display:inline-block;width:80px;">Sáng</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl50_lblBirthday" style="display:inline-block;width:80px;">06/09/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl50$txtMark10" type="text" value="6.5" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl50_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl50_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl51_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl50_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:White;font-size:9pt;">
+				<td>
+                                        50
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl51_lblStudentID" style="display:inline-block;width:80px;">19110041</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl51_lblClassStudentID" style="display:inline-block;width:80px;">191101A</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl51_lblLastMiddleName" style="display:inline-block;width:200px;">Nguyễn Văn </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl51_lblFirstName" style="display:inline-block;width:80px;">Thành</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl51_lblBirthday" style="display:inline-block;width:80px;">01/03/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl51$txtMark10" type="text" value="8" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl51_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl51_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl52_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl51_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:#E3EAEB;font-size:9pt;">
+				<td>
+                                        51
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl52_lblStudentID" style="display:inline-block;width:80px;">19110455</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl52_lblClassStudentID" style="display:inline-block;width:80px;">191103A</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl52_lblLastMiddleName" style="display:inline-block;width:200px;">Tôn Thiên </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl52_lblFirstName" style="display:inline-block;width:80px;">Thạch</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl52_lblBirthday" style="display:inline-block;width:80px;">02/08/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl52$txtMark10" type="text" value="7" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl52_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl52_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl53_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl52_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:White;font-size:9pt;">
+				<td>
+                                        52
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl53_lblStudentID" style="display:inline-block;width:80px;">19110459</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl53_lblClassStudentID" style="display:inline-block;width:80px;">191103A</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl53_lblLastMiddleName" style="display:inline-block;width:200px;">Nguyễn Đức </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl53_lblFirstName" style="display:inline-block;width:80px;">Thạnh</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl53_lblBirthday" style="display:inline-block;width:80px;">13/03/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl53$txtMark10" type="text" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl53_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl53_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl54_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl53_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:#E3EAEB;font-size:9pt;">
+				<td>
+                                        53
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl54_lblStudentID" style="display:inline-block;width:80px;">19110462</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl54_lblClassStudentID" style="display:inline-block;width:80px;">191103B</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl54_lblLastMiddleName" style="display:inline-block;width:200px;">Hoàng Minh </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl54_lblFirstName" style="display:inline-block;width:80px;">Thắng</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl54_lblBirthday" style="display:inline-block;width:80px;">03/11/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl54$txtMark10" type="text" value="10" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl54_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl54_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl55_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl54_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:White;font-size:9pt;">
+				<td>
+                                        54
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl55_lblStudentID" style="display:inline-block;width:80px;">19110464</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl55_lblClassStudentID" style="display:inline-block;width:80px;">191103B</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl55_lblLastMiddleName" style="display:inline-block;width:200px;">Trần Mạnh </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl55_lblFirstName" style="display:inline-block;width:80px;">Thắng</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl55_lblBirthday" style="display:inline-block;width:80px;">10/07/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl55$txtMark10" type="text" value="10" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl55_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl55_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl56_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl55_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:#E3EAEB;font-size:9pt;">
+				<td>
+                                        55
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl56_lblStudentID" style="display:inline-block;width:80px;">19110466</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl56_lblClassStudentID" style="display:inline-block;width:80px;">191102B</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl56_lblLastMiddleName" style="display:inline-block;width:200px;">Trần Đông </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl56_lblFirstName" style="display:inline-block;width:80px;">Thịnh</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl56_lblBirthday" style="display:inline-block;width:80px;">05/07/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl56$txtMark10" type="text" value="8" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl56_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl56_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl57_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl56_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:White;font-size:9pt;">
+				<td>
+                                        56
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl57_lblStudentID" style="display:inline-block;width:80px;">19110046</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl57_lblClassStudentID" style="display:inline-block;width:80px;">191103B</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl57_lblLastMiddleName" style="display:inline-block;width:200px;">Huỳnh Đình </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl57_lblFirstName" style="display:inline-block;width:80px;">Thông</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl57_lblBirthday" style="display:inline-block;width:80px;">31/01/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl57$txtMark10" type="text" value="10" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl57_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl57_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl58_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl57_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:#E3EAEB;font-size:9pt;">
+				<td>
+                                        57
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl58_lblStudentID" style="display:inline-block;width:80px;">15110327</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl58_lblClassStudentID" style="display:inline-block;width:80px;">151101A</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl58_lblLastMiddleName" style="display:inline-block;width:200px;">Nguyễn Ngọc Minh </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl58_lblFirstName" style="display:inline-block;width:80px;">Thuận</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl58_lblBirthday" style="display:inline-block;width:80px;">24/10/1997</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl58$txtMark10" type="text" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl58_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl58_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl59_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl58_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:White;font-size:9pt;">
+				<td>
+                                        58
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl59_lblStudentID" style="display:inline-block;width:80px;">19110469</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl59_lblClassStudentID" style="display:inline-block;width:80px;">191103A</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl59_lblLastMiddleName" style="display:inline-block;width:200px;">Phạm Tuấn </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl59_lblFirstName" style="display:inline-block;width:80px;">Thư</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl59_lblBirthday" style="display:inline-block;width:80px;">25/02/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl59$txtMark10" type="text" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl59_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl59_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl60_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl59_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:#E3EAEB;font-size:9pt;">
+				<td>
+                                        59
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl60_lblStudentID" style="display:inline-block;width:80px;">19110470</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl60_lblClassStudentID" style="display:inline-block;width:80px;">191103A</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl60_lblLastMiddleName" style="display:inline-block;width:200px;">Nguyễn Công </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl60_lblFirstName" style="display:inline-block;width:80px;">Tiến</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl60_lblBirthday" style="display:inline-block;width:80px;">01/01/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl60$txtMark10" type="text" value="7" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl60_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl60_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl62_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl60_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:White;font-size:9pt;">
+				<td>
+                                        60
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl61_lblStudentID" style="display:inline-block;width:80px;">19110473</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl61_lblClassStudentID" style="display:inline-block;width:80px;">191102B</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl61_lblLastMiddleName" style="display:inline-block;width:200px;">Hoàng Trần Hữu </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl61_lblFirstName" style="display:inline-block;width:80px;">Tín</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl61_lblBirthday" style="display:inline-block;width:80px;">11/09/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl61$txtMark10" type="text" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl61_txtMark10" disabled="disabled" class="requiredField1" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl61_lblNote" style="display:inline-block;width:50px;">RT</span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:#E3EAEB;font-size:9pt;">
+				<td>
+                                        61
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl62_lblStudentID" style="display:inline-block;width:80px;">19110474</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl62_lblClassStudentID" style="display:inline-block;width:80px;">191101A</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl62_lblLastMiddleName" style="display:inline-block;width:200px;">Nguyễn Hữu </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl62_lblFirstName" style="display:inline-block;width:80px;">Tín</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl62_lblBirthday" style="display:inline-block;width:80px;">03/09/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl62$txtMark10" type="text" value="6" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl62_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl62_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl63_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl62_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:White;font-size:9pt;">
+				<td>
+                                        62
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl63_lblStudentID" style="display:inline-block;width:80px;">19110482</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl63_lblClassStudentID" style="display:inline-block;width:80px;">191103A</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl63_lblLastMiddleName" style="display:inline-block;width:200px;">Nguyễn Cao </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl63_lblFirstName" style="display:inline-block;width:80px;">Trí</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl63_lblBirthday" style="display:inline-block;width:80px;">12/04/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl63$txtMark10" type="text" value="7" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl63_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl63_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl64_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl63_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:#E3EAEB;font-size:9pt;">
+				<td>
+                                        63
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl64_lblStudentID" style="display:inline-block;width:80px;">19110488</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl64_lblClassStudentID" style="display:inline-block;width:80px;">191102C</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl64_lblLastMiddleName" style="display:inline-block;width:200px;">Phan Nguyễn Thanh </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl64_lblFirstName" style="display:inline-block;width:80px;">Trúc</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl64_lblBirthday" style="display:inline-block;width:80px;">25/08/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl64$txtMark10" type="text" value="7.5" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl64_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl64_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl65_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl64_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:White;font-size:9pt;">
+				<td>
+                                        64
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl65_lblStudentID" style="display:inline-block;width:80px;">18110384</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl65_lblClassStudentID" style="display:inline-block;width:80px;">18110IS</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl65_lblLastMiddleName" style="display:inline-block;width:200px;">Hồ Văn </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl65_lblFirstName" style="display:inline-block;width:80px;">Trường</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl65_lblBirthday" style="display:inline-block;width:80px;">17/05/2000</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl65$txtMark10" type="text" value="7" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl65_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl65_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl66_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl65_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:#E3EAEB;font-size:9pt;">
+				<td>
+                                        65
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl66_lblStudentID" style="display:inline-block;width:80px;">19110491</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl66_lblClassStudentID" style="display:inline-block;width:80px;">191103A</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl66_lblLastMiddleName" style="display:inline-block;width:200px;">Nguyễn Văn </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl66_lblFirstName" style="display:inline-block;width:80px;">Trường</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl66_lblBirthday" style="display:inline-block;width:80px;">08/08/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl66$txtMark10" type="text" value="8" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl66_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl66_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl67_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl66_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:White;font-size:9pt;">
+				<td>
+                                        66
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl67_lblStudentID" style="display:inline-block;width:80px;">19110492</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl67_lblClassStudentID" style="display:inline-block;width:80px;">191103B</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl67_lblLastMiddleName" style="display:inline-block;width:200px;">Trịnh Công </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl67_lblFirstName" style="display:inline-block;width:80px;">Trưởng</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl67_lblBirthday" style="display:inline-block;width:80px;">03/09/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl67$txtMark10" type="text" value="7.5" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl67_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl67_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl68_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl67_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:#E3EAEB;font-size:9pt;">
+				<td>
+                                        67
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl68_lblStudentID" style="display:inline-block;width:80px;">19110493</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl68_lblClassStudentID" style="display:inline-block;width:80px;">191103A</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl68_lblLastMiddleName" style="display:inline-block;width:200px;">Lê Văn </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl68_lblFirstName" style="display:inline-block;width:80px;">Tuấn</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl68_lblBirthday" style="display:inline-block;width:80px;">05/12/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl68$txtMark10" type="text" value="8.5" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl68_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl68_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl69_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl68_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:White;font-size:9pt;">
+				<td>
+                                        68
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl69_lblStudentID" style="display:inline-block;width:80px;">19110494</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl69_lblClassStudentID" style="display:inline-block;width:80px;">191103A</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl69_lblLastMiddleName" style="display:inline-block;width:200px;">Nguyễn Anh </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl69_lblFirstName" style="display:inline-block;width:80px;">Tuấn</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl69_lblBirthday" style="display:inline-block;width:80px;">13/10/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl69$txtMark10" type="text" value="8.5" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl69_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl69_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl70_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl69_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:#E3EAEB;font-size:9pt;">
+				<td>
+                                        69
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl70_lblStudentID" style="display:inline-block;width:80px;">19110497</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl70_lblClassStudentID" style="display:inline-block;width:80px;">191103B</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl70_lblLastMiddleName" style="display:inline-block;width:200px;">Vũ Công </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl70_lblFirstName" style="display:inline-block;width:80px;">Tuyền</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl70_lblBirthday" style="display:inline-block;width:80px;">20/03/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl70$txtMark10" type="text" value="8" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl70_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl70_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl71_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl70_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:White;font-size:9pt;">
+				<td>
+                                        70
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl71_lblStudentID" style="display:inline-block;width:80px;">19110045</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl71_lblClassStudentID" style="display:inline-block;width:80px;">191103B</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl71_lblLastMiddleName" style="display:inline-block;width:200px;">Diệp Bảo </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl71_lblFirstName" style="display:inline-block;width:80px;">Tùng</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl71_lblBirthday" style="display:inline-block;width:80px;">31/07/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl71$txtMark10" type="text" value="7.5" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl71_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl71_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl72_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl71_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:#E3EAEB;font-size:9pt;">
+				<td>
+                                        71
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl72_lblStudentID" style="display:inline-block;width:80px;">19110042</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl72_lblClassStudentID" style="display:inline-block;width:80px;">191103A</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl72_lblLastMiddleName" style="display:inline-block;width:200px;">Nguyễn Quang </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl72_lblFirstName" style="display:inline-block;width:80px;">Vinh</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl72_lblBirthday" style="display:inline-block;width:80px;">01/09/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl72$txtMark10" type="text" value="8" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl72_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl72_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl73_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl72_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:White;font-size:9pt;">
+				<td>
+                                        72
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl73_lblStudentID" style="display:inline-block;width:80px;">19110501</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl73_lblClassStudentID" style="display:inline-block;width:80px;">191103A</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl73_lblLastMiddleName" style="display:inline-block;width:200px;">Võ Thành </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl73_lblFirstName" style="display:inline-block;width:80px;">Vinh</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl73_lblBirthday" style="display:inline-block;width:80px;">09/03/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl73$txtMark10" type="text" value="8" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl73_txtMark10" class="requiredField1" onkeypress="return clickEnter('ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl73_txtMark10','ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl74_txtMark10', event)" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl73_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr><tr class="style31" align="left" style="background-color:#E3EAEB;font-size:9pt;">
+				<td>
+                                        73
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl74_lblStudentID" style="display:inline-block;width:80px;">19110502</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl74_lblClassStudentID" style="display:inline-block;width:80px;">191103A</span>
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl74_lblLastMiddleName" style="display:inline-block;width:200px;">Dương Nguyễn Huy </span>
+                                        
+                                        
+                                        
+                                    </td><td>
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl74_lblFirstName" style="display:inline-block;width:80px;">Vũ</span>
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl74_lblBirthday" style="display:inline-block;width:80px;">02/03/2001</span>
+                                        
+                                    </td><td align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$grvStudentScheduleMS$ctl74$txtMark10" type="text" value="7" maxlength="3" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl74_txtMark10" class="requiredField1" style="width:50px;">
+                                    </td><td align="center">
+                                        <span id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_grvStudentScheduleMS_ctl74_lblNote" style="display:inline-block;width:50px;"></span>
+                                    </td>
+			</tr>
+		</tbody></table>
+	</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <input type="submit" name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$btnSaveScoreMS" value="Lưu Điểm" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_btnSaveScoreMS">
+                        <input type="submit" name="ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$btnPrintMS" value="In điểm" id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_btnPrintMS">
+                        <a id="ctl00_ContentPlaceHolder1_ctl00_ctl00_ctl00_lbtXuatBangDiemSCh" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$ctl00$ctl00$ctl00$lbtXuatBangDiemSCh','')">Xuất bảng điểm</a>
+                    </td>
+                </tr>
+        
+</tbody></table>
+  </body>
+</html>
